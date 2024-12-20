@@ -1,0 +1,212 @@
+body{
+    height: 2000px;
+    font-family: 'Roboto', sans-serif;
+   }
+   :root{
+       --sky-color:#115249;
+       --dark-color: #19283f;
+       --green-color: #3dc5c1;
+       --red-color: hsla(1, 77%, 48%, 0.922);
+       --redo-color: hsla(1, 94%, 19%, 0.922);
+       --yellow-color: #ffc400;
+       --darckred-color: #81202e;
+       --section-color: #eff7fa;
+       --grey-color: #9c9e9e;
+       --mywhite-color: whitesmoke;
+       --drk-color:rgb(0, 0, 0);
+       --dok-color:rgb(61, 61, 61);
+       --prime-color:#1877f2;
+   }
+   
+    .navbar-nav .nav-link{
+       color: var(--red-color);
+       font-size: 18px;
+       font-weight: bolder;
+       font-family: "Nunito", "sans-serif";
+       }
+    
+   .navbar .navbar-nav .nav-link.active,
+   .navbar .navbar-nav .nav-link:hover,
+   .navbar .navbar-nav .nav-link:focus{
+       color: var(--redo-color);
+       font-size: 19px;
+       font-weight: bolder;
+       font-family:"Nunito", sans-serif;
+   }
+   .back{
+    position: relative;
+    background-image: url("back8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .back::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; 
+    background-size: inherit;
+    background-repeat: inherit;
+    filter: blur(0);
+    z-index: 0; 
+}
+
+.back > * {
+    position: relative; 
+    z-index: 1;
+}
+.bt{
+    all: unset; /* Reset all default button styles */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.icon{
+    border: none;
+    color: var(--drk-color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+
+   .navbar .navbar-toggler{
+       color: white;
+       font-size: 15px;
+       border-color: white;
+   }
+   .navbar .navbar-toggler:focus{
+      box-shadow: none;
+   }
+   .navbar .navbar-toggler[aria-expanded="true"]{
+       border-color: var(--green-color);
+    }
+   .pop{
+       margin-left: 30%;
+   }
+   .titre{
+       font-family: "ubuntu","sans-serif";
+   }
+   .mp{
+       margin-bottom: 5%;
+   }
+   .card {
+      
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+       overflow: hidden;
+       transition: transform 0.2s, box-shadow 0.2s;
+   }
+   .hov:hover{
+    transform: scale(1.1);
+   }
+   .card:hover {
+       transform: translateY(-5px);
+       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+   }
+   .landing{
+       min-height: calc(100vh - 128px);
+   }
+   img{
+       object-fit: cover;
+   }
+   .main-btn{
+       color: var(--yellow-color);
+       background-color: var(--red-color);
+       padding: 5px 20px;
+   }
+   .main-btn:hover{
+       color: var(--yellow-color);
+       background-color: var(--darckred-color);
+   }
+   .second-btn{
+       color: var(--mywhite-color);
+       background-color: var(--drk-color);
+       padding: 5px 20px;
+   }
+   
+   .second-btn:hover{
+       color: var(--mywhite-color);
+       background-color: var(--dok-color);
+   }
+   .card-title{
+       font-family: "Parkinsans", sans-serif;
+   }
+   .card-text{
+       color: #3a3838;
+   }
+   i{
+       font-size: 50px;
+   }
+   .footer{
+       background-color: var(--dark-color);
+   }
+   .lp{
+       color: #9c9e9e;
+   }
+   .lp:hover{
+       color: #b8bbbb;
+   }
+.page-link:hover {
+    color:var(--drk-color); 
+    background-color: var(--mywhite-color); 
+    border-color: var(--drk-color); 
+}
+.page-link {
+    color: var(--mywhite-color); 
+    background-color: var(--drk-color); 
+    border-color: var(--drk-color); 
+}
+.bi-chevron-double-left{
+    font-size: 16px;
+}
+.bi-chevron-double-right{
+    font-size: 16px;
+}
+#up {
+    position: fixed;
+    background-color: #1b65c5;
+    right: 22px;
+    bottom: 22px;
+    border-radius: 4px;
+    border: none;
+    display: none;
+  }
+
+#up:hover {
+    background-color: #024f8d;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bi-arrow-up{
+    font-size: 20px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+   .footer .facebook:hover {
+       background-color: #1877f2;
+       border-radius: 48%;
+   }
+   .footer .youtube:hover {
+       background-color: #ff0000;
+       border-radius: 48%;
+   }
+   .footer .instagram:hover {
+       background-color: #e1306c;
+       border-radius: 48%;
+   }
+   .footer .github:hover {
+       background-color: #020202;
+       border-radius: 48%;}
+   .footer .pm{
+       background-color: #636363;
+       border-radius: 48%;
+   }
+   .heart{
+       color: #e1306c;
+   }
